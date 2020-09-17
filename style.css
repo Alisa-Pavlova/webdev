@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1062px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #00AFDB;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 14px 52px 14px 45px;
+  transition: background-color .4s ease;
+  letter-spacing: -1px;
+}
+
+.button:hover {
+  background-color: #009CC2;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.text {
+  font-size: 14px;
+  color: #4E4E4E;
+
+}
+
+/* End base style */
+
+/* Start header style */
+
+.header {
+  min-height: 95px;
+  background-color: #000;
+}
+
+.main {
+  margin-top: -1px;
+}
+
+
+.main-menu {
+  display: flex;
+  padding-left: 233px;
+}
+
+.main-menu__item {
+  padding-top: 38px;
+  position: relative;
+}
+
+.main-menu__item--active::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 1px;
+  width: 100%;
+  top: 58px;
+  background-color: #fff;
+
+}
+
+.main-menu__item--active .main-menu__link {
+  opacity: 1;
+
+}
+
+.main-menu__item--about {
+  margin-right: 85px;
+}
+
+.main-menu__item--sullabus {
+  margin-right: 102px;
+}
+
+
+.main-menu__item--projects {
+  margin-right: 83px;
+}
+
+.main-menu__item--faq {
+  text-transform: uppercase;
+}
+
+.main-menu__logo {
+  margin-right: 101px;
+  padding-top: 25px;
+}
+
+.main-menu__link {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  transition: all .4s linear;
+  opacity: .8;
+}
+
+.main-menu__link-logo {
+  transition: all .4s linear;
+}
+
+.main-menu__link-logo:hover {
+  transform: scale(1.1);
+}
+
+.main-menu__link:hover {
+  opacity: .3;
+}
+
+/* End header style */
