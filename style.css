@@ -10,7 +10,6 @@ html {
   color: #000;
   margin: 0;
   padding: 0;
-
 }
 
 body {
@@ -93,13 +92,18 @@ li {
 .text {
   font-size: 14px;
   color: #4E4E4E;
-
 }
 
+.information__link {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #fff;
+}
 /* End base style */
 
 /* Start header style */
-
 .header {
   min-height: 95px;
   background-color: #000;
@@ -128,7 +132,6 @@ li {
   width: 100%;
   top: 58px;
   background-color: #fff;
-
 }
 
 .main-menu__item--active .main-menu__link {
@@ -144,7 +147,6 @@ li {
   margin-right: 102px;
 }
 
-
 .main-menu__item--projects {
   margin-right: 83px;
 }
@@ -159,9 +161,6 @@ li {
 }
 
 .main-menu__link {
-  font-family: 'Roboto', Arial, sans-serif;
-  font-size: 14px;
-  color: #fff;
   transition: all .4s linear;
   opacity: .8;
 }
@@ -177,15 +176,12 @@ li {
 .main-menu__link:hover {
   opacity: .3;
 }
-
 /* End header style */
 
 /* Start main style */
 .hero {
+  background: url(assets/bg-header.png) bottom center no-repeat;
   background-color: #000;
-  background-image: url(assets/bg-header.png);
-  background-position: bottom;
-  background-repeat: no-repeat;
 }
 
 .information {
@@ -301,13 +297,10 @@ li {
   margin-bottom: 11px;
   text-transform: uppercase;
   letter-spacing: 2px;
-
 }
 
 .community__text {
-  font-size: 14px;
   text-align: center;
-  color: #4E4E4E;
   max-width: 298px;
 }
 
@@ -405,10 +398,8 @@ li {
 }
 
 .subscribe {
-  background-image: url(assets/bg-subscribe.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
+  background: url(assets/bg-subscribe.png) center / 100% no-repeat;
+  background-color: #4E4E4E;
   padding: 217px 0 277px 0;
 }
 
@@ -553,7 +544,6 @@ li {
   background-color: #009CC2;
   z-index: 100;
 }
-
 /* End main style */
 
 /* Start footer style */
@@ -583,12 +573,6 @@ li {
 }
 
 .more__link {
-  font-family: "Roboto",
-    Arial serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #fff;
-  text-transform: capitalize;
   opacity: .9;
   position: relative;
   transition: all .3s ease-in-out;
@@ -625,5 +609,4 @@ li {
 .copyright {
   color: #818181;
 }
-
 /* End footer style */
